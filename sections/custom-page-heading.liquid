@@ -1,0 +1,37 @@
+<h1>Hello1</h1>
+
+{% schema %}
+{
+  "name": "Custom Page Heading",
+  "tag": "section",
+  "class": "custom-page-heading",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "default": "stretch_width",
+      "options": [
+        {
+          "value": "stretch_width",
+          "label": "Stretch width"
+        },
+        {
+          "value": "container",
+          "label": "Container"
+        },
+        {
+          "value": "full_width",
+          "label": "Full width"
+        }
+      ]
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "default-color-scheme"
+    }
+  ]
+}
+{% endschema %}
